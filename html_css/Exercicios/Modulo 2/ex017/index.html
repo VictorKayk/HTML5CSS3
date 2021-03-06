@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de adicionar cor</title>
+    <style>
+        body{
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #nome{
+            background-color: crimson;
+            color: whitesmoke;
+        }
+        #hex_dec{
+            background-color:#dc143c;
+            color:#f5f5f5;
+        }
+        #rgb{
+            background-color: rgb(220, 20, 60);
+            color:rgb(245, 245, 245);
+        }
+        #hsl{
+            background-color:hsl(348, 83%, 47%);
+            color:hsl(0, 0%, 96%);
+        }
+        #transp1{
+            background-color: #dc143c4d;
+            color: #f5f5f5be;
+        }
+        #transp2{
+            background-color: rgba(220, 20, 60, 0.315);
+            color: hsla(0, 0%, 96%, 0.692);
+        }
+    </style>
+</head>
+<body>
+    <!--Adicionando cor ao texto.-->
+    <h1>Diferentes formas de adicionar cor aos textos.</h1>
+    <hr>
+    <!--Adicionando com o nome da cor.-->
+    <div id="nome"><h2>Nome da cor.</h2></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non earum natus dolores obcaecati autem asperiores exercitationem fuga voluptatem at, architecto, magnam nihil a? Inventore, maxime eos! Ut, non sed?</p>
+    <hr>
+    <!--Adicionando com o Código Hexadecimal da cor.-->
+    <div id="hex_dec"><h2>Código Hexadecimal.</h2></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquam ex voluptate et tenetur ipsam nihil sed sint deleniti earum accusamus ab, sit nostrum, molestias quod ut veritatis doloremque quibusdam?</p>
+    <hr>
+    <!--Adicionando com o Código rgb (red, green e blue) da  cor.-->
+    <div id="rgb"><h2>Código rgb (red, greene blue).</h2></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident similique aperiam ipsum odio sunt odit a autem, doloribus, vel dolore in incidunt alias dicta reprehenderit sed? Officiis reiciendis sit consequuntur.</p>
+    <hr>
+    <!--Adicionando com o Código hsl (hue, saturation, brightness) da cor.-->
+    <div id="hsl"><h2>Código hsl (hue, saturation, brightness).</h2></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, tempore tempora. Quos, unde modi. Earum eius recusandae harum nesciunt doloribus distinctio quam corrupti illo, corporis expedita ipsum officiis labore tempore.</p>
+    <hr>
+    <!--Transparencia com as cores.-->
+    <div id="transp1"><h2>Transparencia com Hexadecimal.</h2></div> <!--Transparencia com Hexadecimal-->
+    <p>Na transparencia com cores no código Hexadecimal, são adicionado mais 2 digitos no final do codigo, que representam o alpha. Esses 2 digitos pode ir de 0 (mais fraco) a f (mais forte), dependendo da intensidade da transparencia.</p>
+    <div id="transp2"><h2>Transparencia com rgb e hsl.</h2></div> <!--Transparencia com rgb e hsl.-->
+    <p>Na transparencia com cores nos códigos rgb e hsl, são adicionado alguns digitos no final do codigo, que representam o alpha. Esses digitos podem ir de 0 (mais fraco) a 1 (mais forte), dependendo da intensidade da transparencia.</p>
+    <hr>
+</body>
+</html>
