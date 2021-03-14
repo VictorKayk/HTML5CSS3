@@ -7,14 +7,18 @@
     <title>Teste 002</title>
     <style>
         /*Transição de imagem quando o mouse esta em cima dela*/
-        .imag{
+        #imag{
             width: 600px;
             height: 400px;
             transition: all 1s 0.5s;
             position:absolute;
             left: 300px; 
         }
-        .imag:hover{
+        #emo{
+            transition:all 1s 0.5s;
+            width:200px;
+        }
+        .expanção:hover{
            /* width: 900px;
             height: 600px;
             position:absolute;*/
@@ -24,15 +28,59 @@
             width: 600px;
             height: 400px;
         }
+        /*
+        #modal:target{
+            content:url(jacquin.jpg);
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            left: 300px;
+            transition: all 1s 0.3s;
+            transform:scale(1.2);
+        }
+        .close a, a:link, a:visited{
+            position: absolute;
+            text-decoration:none;
+            float:right;
+            font-weight:bold;
+            font-size: 50px;
+            color: black;
+            margin:10px;
+        }
+        .modal_box{
+            display: none;
+            background-color: rgba(20, 18, 18, 0.329);
+            width:100%;
+            height: 100%;
+            position:fixed;
+            overflow:auto;
+            left:0;
+            top:0;
+        }
+        .modal_box:target{
+            display:table;
+            position: absolute;
+        } 
+        }*/
     </style>
 </head>
 <body>
     <h1>Teste de transição com imagens.</h1>
-    <div><img src="jacquin.jpg" alt="#" class="imag"></div>
+    <!--Tententiva falha de modal:
+        <div><a href="#modal"><img src="jacquin.jpg" alt="#" class="imag"></a>
+        <div id="modal">
+        </div>
+        <div class="close"><a href="#">x</a></div>
+        <div id="modal" class="modal_box">
+            
+        </div>
+    </div>-->
+    <img src="jacquin.jpg" alt="Jacquin" id="imag" class="expanção">
     <div class="quadrado"></div>
     <h2>Jacquin esticadão kkkkkkkkkkkkkkkk</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptates, similique repudiandae blanditiis, cupiditate quod est, fuga aperiam error doloremque vitae beatae corporis ipsam architecto maxime magnam nobis eius modi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eos aperiam quisquam earum tempora expedita provident inventore accusamus, quam sunt fugit! Molestiae a atque itaque fugit officiis consectetur perferendis ipsa!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptatem vel, praesentium ullam temporibus architecto. Dolore quas laudantium temporibus reiciendis adipisci. Mollitia, dicta? Suscipit, quaerat tempore quibusdam quisquam ducimus necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit facere, omnis ullam architecto autem dolorum, debitis sit facilis eum, illum tempora. Porro tempora ipsa fugiat possimus facere sunt sit.
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsa aspernatur distinctio sit corporis temporibus eligendi officiis alias consequatur impedit voluptatibus expedita maiores laboriosam eum vero minus, natus, eius in?
     </p>
+    <img src="unnamed.jpg" alt="Emo" id="emo" class="expanção">
 </body>
 </html>
