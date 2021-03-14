@@ -41,10 +41,19 @@ main{
     padding-right: 17px;
     float:left;
     transition:all 0.1s;
+    position: absolute;
 }
 
 .icones:hover{
     width: 58px;
+    position: absolute;
+}
+
+div.box{
+    width:55px;
+    height: 38px;
+    padding-right: 17px;
+    float:left;
 }
 
 a:link, a:visited{
