@@ -38,8 +38,13 @@ main{
 
 .icones{
     width: 55px;
-    padding-right: 15px;
+    padding-right: 17px;
     float:left;
+    transition:all 0.1s;
+}
+
+.icones:hover{
+    width: 58px;
 }
 
 a:link, a:visited{
@@ -53,9 +58,15 @@ a:link, a:visited{
     text-decoration: none;
 }
 
+a{
+    transition:all 0.1s;
+    line-height: 10px;
+}
+
 a:hover{
     color:#cf8700;
     text-decoration: underline;
+    font-size:18px;
 }
 
 .menu a, h1{
@@ -63,11 +74,20 @@ a:hover{
     text-align: center;
     color: #cf8700;
     text-decoration:none;
+    transition: all 0.2s;
+}
 
+.menu a:hover, h1{
+    font-size: 38px;
 }
 
 .modulo a, h2{
     color: #aa5e02;
     text-decoration:none;
     font-size:23px;
+    transition:all 0.2s;
+}
+
+.modulo a:hover, h2{
+    font-size: 24px;
 }
