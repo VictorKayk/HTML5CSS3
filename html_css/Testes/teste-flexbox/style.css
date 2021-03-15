@@ -1,0 +1,84 @@
+/*Configuração global*/
+*{
+    box-sizing:border-box;
+}
+/*Definindo as variaveis*/
+:root{
+    --roxo: #555B6E;
+    --azul-escuro:#89B0AE;
+    --azul-claro:#BEE3DB;
+    --bege:#FAF9F9;
+    --damasco: #FFD6BA;
+    --cor-titulo1:#01172F;
+    --cor-titulo2:#4C212A;
+    --cor-texto: #181412;
+}
+/*Configuração do corpo da pagina*/
+body{
+    padding: 50px;
+    margin:30px;
+    border:solid 3px var(--bege);
+    background-color:var(--azul-escuro);
+}
+/*Configuração do titulo h1*/
+h1, h1 a, h1 a:link, h1 a:visited, h1 a:active, h1 a:hover{
+    text-align:center;
+    color: var(--cor-titulo1);
+    font-weight:800;
+    font-size:35px;
+    text-decoration: none;
+}
+h1 a, h1 a:link, h1 a:visited, h1 a:active, h1 a:hover{ /*Configurando o estilo de um link como titulo 1*/
+    text-decoration: underline;
+}
+/*Configuração do titulo h2*/
+h2, h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover{
+    text-align:center;
+    color: var(--cor-titulo2);
+    font-weight:800;
+    font-size: 30px;
+    margin-top:35px;
+    text-decoration:none;
+}
+h2 a, h2 a:link, h2 a:visited, h2 a:active, h2 a:hover{ /*Configurando o estilo de um link como titulo 2*/
+    text-decoration: underline;
+    transition:all 1s 0.1s;
+}
+h2 a:hover{ /*Configurando o efeito de quando o mouse passa por cima de um link*/
+}
+/*Configuração do paragrafo*/
+p, p a, p a:link, p a:visited, p a:active, p a:hover{
+    text-align:center;
+    margin-bottom: 20px;
+    color:var(--cor-texto);
+    font-size: 125%;
+    font-weight:500;
+    text-decoration:none
+}
+p a, p a:link, p a:visited, p a:active, p a:hover{ /*Configurando o estilo de um link para o paragrafo*/
+    text-decoration: underline;
+}
+/*Configuração da quebra de linha
+hr{
+    border:solid 1px var(--bege);
+    margin:20px;
+}*/
+/*Configuração do conteiner do flex-box*/
+.conteiner{
+    display:flex;
+    width:50%;
+    margin:0 auto; /*Para centralizar o elemento*/
+    padding: 3px;
+    border: solid 2px var(--bege);
+    background-color:rgba(255, 255, 255, 0.123);
+}
+/*Configuração dos itens*/
+.item{
+    flex:1; /*Para fazer o flex-item ocupar todo o conteiner*/
+    text-align:center;
+    padding: 20px;
+    border: solid 2px var(--bege);
+    background-color: var(--roxo);
+    margin: 5px;
+    color:var(--bege);
+}
