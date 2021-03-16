@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-flow</title>
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /*Configurando o tamanho do conteiner*/
+        .conteiner{
+            max-width:300px;
+        }
+        /**/
+        .row-nowrap{
+            flex-flow: row nowrap;
+        }
+        /**/
+        .row-wrap{
+            flex-flow:row wrap;
+        }
+        /**/
+        .column-nowrap{
+            flex-flow:column nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-flow: ;</h1>
+    <p><strong>flex-flow: ;</strong> é um propriedade que une as propriedades <strong>flex-direction: ;</strong> e <strong>flex-wrap</strong> em uma só (um atalho). Ela permite todas as combinações de valores das duas propriedade, e não necessita de uma ordem especifica. Algumas dessa combinações possiveis são:</p>
+    <h2>row nowrap</h2>
+    <article class="conteiner row-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </article>
+    <h2>row wrap</h2> 
+    <article class="conteiner row-wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </article>
+    <h2>column nowrap</h2>
+    <article class="conteiner column-nowrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </article>
+</body>
+</html>

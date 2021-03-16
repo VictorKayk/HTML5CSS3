@@ -4,21 +4,22 @@
 }
 /*Definindo as variaveis*/
 :root{
-    --roxo: #555B6E;
-    --azul-escuro:#89B0AE;
     --azul-claro:#BEE3DB;
     --bege:#FAF9F9;
     --damasco: #FFD6BA;
     --cor-titulo1:#01172F;
     --cor-titulo2:#4C212A;
     --cor-texto: #181412;
+    --cor-fundo: #A5A5A5;
+    --cor-item: #255F85;
 }
 /*Configuração do corpo da pagina*/
 body{
     padding: 50px;
     margin:30px;
     border:solid 3px var(--bege);
-    background-color:var(--azul-escuro);
+    background-color: var(--cor-fundo);
+    background-attachment:fixed;
 }
 /*Configuração padrão dos links*/
 a{
@@ -102,7 +103,7 @@ hr{
     text-align:center;
     padding: 20px;
     border: solid 2px var(--bege);
-    background-color: var(--roxo);
+    background-color: var(--cor-item);
     margin: 5px;
     color:var(--bege);
 }
