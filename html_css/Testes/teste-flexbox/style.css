@@ -1,3 +1,4 @@
+/*Definindo configurações globais do site*/
 /*Configuração global*/
 *{
     box-sizing:border-box;
@@ -13,6 +14,8 @@
     --cor-fundo: #A5A5A5;
     --cor-item: #255F85;
 }
+
+/*Configuração no "corpo" do site*/
 /*Configuração do corpo da pagina*/
 body{
     padding: 50px;
@@ -65,7 +68,7 @@ h2 a:hover{ /*Configurando o efeito de quando o mouse passa por cima de um link*
 /*Configuração do paragrafo*/
 p, p a, p a:link, p a:visited, p a:active, p a:hover{
     text-align:center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top:10px;
     color:var(--cor-texto);
     font-size: 125%;
@@ -81,11 +84,11 @@ p a:hover{
     font-size: 22px;
     font-weight:800;
 }
-/*Configuração da quebra de linha
+/*Configuração da quebra de linha*/
 hr{
     border:solid 1px var(--bege);
-    margin:20px;
-}*/
+    margin:45px;
+}
 
 /*Flex Box*/
 /*Configuração do conteiner do flex-box*/
