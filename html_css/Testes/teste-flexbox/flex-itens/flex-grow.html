@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-grow</title>
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /*Tirando o flex:1 (para os itens não ocuparem todo o conteiner)*/
+        .item{
+            flex:0;
+        }
+        /*Configurando para o Flex Item ocupar, somente o tamanho de seu conteudo (padrão)*/
+        .grow-0{
+            flex-grow:0;
+        }
+        /*Configurando para o Flex Item ocupar, proporcionalmente 1 vez mais que os outros item (se os outros itens não receberem o mesmo valor, ou maior)*/
+        .grow-1{
+            flex-grow:1;
+        }
+        /*Configurando para o Flex Item ocupar, proporcionalmente 2 vez mais que os outros item (se os outros itens não receberem o mesmo valor, ou maior)*/
+        .grow-2{
+            flex-grow:2;
+        }
+        /*Configurando para o Flex Item ocupar, proporcionalmente 5 vez mais que os outros item (se os outros itens não receberem o mesmo valor, ou maior)*/
+        .grow-5{
+            flex-grow: 5;
+        }
+        /*Configurando o tamanho do flex-direction: column;*/
+        .column{
+            min-width:300px;
+            height:450px;
+            flex-direction:column;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow: ;</h1>
+    <p>Usar para definir a proporção em que cada <strong>Flex Item</strong> irá crescer, os valores são definidos com números (o <strong>justify-content: ;</strong> não irá funcionar com o <strong>flex-grow: ;</strong> diferente de 0).</p>
+    <h2>flex-grow: 0; (Padrão)</h2>
+    <p><strong>flex-grow: 0;</strong> (Padrão), os <strong>Flex Itens</strong> não irão crescer, eles ficarão com o espaço necessario para o seu conteudo.</p>
+    <article class="conteiner ">
+        <div class="item grow-0">1</div>
+        <div class="item grow-0">2</div>
+        <div class="item grow-0">3</div>
+        <div class="item grow-0">4</div>
+        <div class="item grow-0">5</div>
+    </article>
+    <article class="conteiner grow-0 column">
+        <div class="item grow-0">1</div>
+        <div class="item grow-0">2</div>
+        <div class="item grow-0">3</div>
+        <div class="item grow-0">4</div>
+        <div class="item grow-0">5</div>
+    </article>
+    <hr>
+    <h2>flex-grow: ; com o mesmo valor em todos os itens.</h2>
+    <p>Quando todos os <strong>Flex Itens</strong> recebem o mesmo valor, diferente de 0, eles são ajustados para ocupar totalmente o conteiner, com a mesma proporção de tamanho para cada (se um item tiver um conteudo maior que os outros, ele ocupará um espaço maior do conteiner, mas receberá um crescimento do <strong>flex-grow: ;</strong> do mesmo tamanho que os outros).</p><br>
+    <p><strong>flex-grow: 1;</strong> definido em todos os itens:</p>
+    <article class="conteiner grow-1">
+        <div class="item grow-1">1</div>
+        <div class="item grow-1">2</div>
+        <div class="item grow-1">3</div>
+        <div class="item grow-1">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+    <article class="conteiner grow-1 column">
+        <div class="item grow-1">1</div>
+        <div class="item grow-1">2</div>
+        <div class="item grow-1">3</div>
+        <div class="item grow-1">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+    <hr>
+    <h2><strong>flex-grow: ;</strong> com valores diferentes.</h2>
+    <p>Quando os <strong>Flex Itens</strong> recebem valores diferentes, eles são ajustados para crescer proporcionalmente aos valores que receberam, vizando ocupar o conteiner totalmente. Usando o exemplo a seguir: Os <strong>Flex Itens</strong> 1, 3 e 5 receberam o <strong>flex-grow: 1;</strong>, e os <strong>Flex Itens</strong> 2 e 4 receberam o <strong>flex-grow: 2;</strong>, os itens 2 e 4 serão ajustados para ocupar 2 vezes mais o conteiner do que os itens 1, 3 e 5. Se eles tivessem recebido o <strong>flex-grow: 3;</strong> em vez do 2, seriam ajustados para ocupar 3 vezes mais que os outros, e assim por diante, seguindo a proporção.</p><br>
+    <br><p><strong>flex-grow: 1;</strong> nos itens 1, 3 e 5 / <strong>flex-grow: 2;</strong> nos itens 2 e 4.</p>
+    <article class="conteiner grow-2">
+        <div class="item grow-1">1</div>
+        <div class="item grow-2">2</div>
+        <div class="item grow-1">3</div>
+        <div class="item grow-2">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+    <article class="conteiner grow-2 column">
+        <div class="item grow-1">1</div>
+        <div class="item grow-2">2</div>
+        <div class="item grow-1">3</div>
+        <div class="item grow-2">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+    <br><br><p><strong>flex-grow: 1;</strong> nos itens 1, 2, 4 e 5 / <strong>flex-grow: 5;</strong> no item 3.<br>(Em proporção, o item 3 ocupa 5 vezes mais espaço que os outros).</p>
+    <article class="conteiner grow-2">
+        <div class="item grow-1">1</div>
+        <div class="item grow-1">2</div>
+        <div class="item grow-5">3</div>
+        <div class="item grow-1">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+    <article class="conteiner grow-2 column">
+        <div class="item grow-1">1</div>
+        <div class="item grow-1">2</div>
+        <div class="item grow-5">3</div>
+        <div class="item grow-1">4</div>
+        <div class="item grow-1">5</div>
+    </article>
+</body>
+</html>

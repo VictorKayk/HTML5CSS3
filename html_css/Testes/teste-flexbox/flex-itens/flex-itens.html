@@ -7,8 +7,43 @@
     <title>Flex Itens</title>
     <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        /*Teste de menu*/
+        /*Configurando o flex conteiner, e ajustuando o alinhamento dos Flex Itens*/
+        .menu-back{
+            display:flex;
+            justify-content: space-between;
+        }
+        .link{
+            display:flex;
+            width: 35px;
+        }
+        /*Configurando o estilo do link*/
+        .link-retorno{
+            text-align:center;
+            margin: 0px;
+            color:#01172F;
+            font-size: 125%;
+            font-weight:500;
+            text-decoration:none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Flex Itens.</h1>
+    <div class="menu-back">
+        <selection class="link">
+            <p><a href="../base-flexbox.html" class="link-retorno">&lt--</a></p>
+        </selection>
+        <selection class=menu>
+          <h1>Flex Itens.</h1>  
+        </selection>
+        <selection></selection>
+    </div>
+    <p><strong>Flex Itens</strong> são os filhos dos <strong>Flex Conteiners</strong>. Os <strong>Flex Itens</strong> também podem ser conteiners, bastas adicionar uma propriedade <strong>display: flex;</strong> a ele (Suas tags filhas irão se tornar <strong>Flex Itens</strong> também).</p>
+    <hr>
+    <h2><a href="flex-grow.html">flex-grow: ;</a></h2>
+    <p>Usar para definir a proporção em que cada <strong>Flex Item</strong> irá crescer, os valores são definidos com números (o <strong>justify-content: ;</strong> não irá funcionar com o <strong>flex-grow: ;</strong> diferente de 0).<br><br><strong>flex-grow: 0;</strong> (Padrão), os <strong>Flex Itens</strong> não irão crescer, eles ficarão com o espaço necessario para o seu conteudo.<br><br><strong>flex-grow: ; com o mesmo valor em todos os itens.</strong> Quando todos os <strong>Flex Itens</strong> recebem o mesmo valor, diferente de 0, eles são ajustados para ocupar totalmente o conteiner, com a mesma proporção de tamanho para cada (se um item tiver um conteudo maior que os outros, ele ocupará um espaço maior do conteiner, mas receberá um crescimento do <strong>flex-grow: ;</strong> do mesmo tamanho que os outros).<br><br><strong><strong>flex-grow: ;</strong> com valores diferentes.</strong> Quando os <strong>Flex Itens</strong> recebem valores diferentes, eles são ajustados para crescer proporcionalmente aos valores que receberam, vizando ocupar o conteiner totalmente.</p>
+    <hr>
 </body>
 </html>
