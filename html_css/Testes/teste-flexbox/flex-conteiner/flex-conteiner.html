@@ -7,9 +7,39 @@
     <title>Flex Conteiner</title>
     <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        /*Teste de menu*/
+        /*Configurando o flex conteiner, e ajustuando o alinhamento dos Flex Itens*/
+        .menu-back{
+            display:flex;
+            justify-content: space-between;
+        }
+        .link{
+            display:flex;
+            width: 35px;
+        }
+        /*Configurando o estilo do link*/
+        .link-retorno{
+            text-align:center;
+            margin: 0px;
+            color:#01172F;
+            font-size: 125%;
+            font-weight:500;
+            text-decoration:none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Flex Conteiner.</h1>
+    <div class="menu-back">
+        <selection class="link">
+            <p><a href="../base-flexbox.html" class="link-retorno">&lt--</a></p>
+        </selection>
+        <selection class=menu>
+            <h1>Flex Conteiner</h1>
+        </selection>
+        <selection></selection>
+    </div>
     <p>Usar para transformar um elemento em um <strong>Flex Conteiner</strong>, e todos seus filhos diretos (Todas as tags que estão diretamente dentro da tag que virou um <strong>Flex Conteiner</strong>) em <strong>Flex Itens</strong>.</p>
     <hr>
     <h2><a href="flex-direction.html">flex-direction: ;</a></h2>
@@ -26,6 +56,9 @@
     <hr>
     <h2><a href="align-items.html">align-items: ;</a></h2>
     <p>Usar para alinhar os <strong>Flex Itens</strong> dentro do <strong>Flex Conteiner</strong>(funciona com qualquer <strong>flex-direction: ;</strong>)(de forma grosseira, alinha o <strong>flex-direction: row;</strong> verticalmente e o <strong>flex-direction: column;</strong> horizontalmente). É possivel usar alguns valores para configurar esse alinhamento, como:<br><br><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente,  e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.<br><br><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).<br><br><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).<br><br><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).<br><br><strong>baseline</strong>, alinha os itens no conteiner, de acordo com a baseline da fonte das letras (verticalmente para <strong>flex-direction: row;</strong> e horizontalmente para o <strong>flex-direction: column;</strong>).</p>
+    <hr>
+    <h2><a href="align-content.html">align-content: ;</a></h2>
+    <p>Usar para modificar/definir o comportamento das linhas do <strong>Flex Conteiner</strong>, definidas pelo <strong>flex-wrap: ;</strong>. Semelhante ao <strong>align-items: ;</strong>, mas em vez de alinhar todos os itens flexiveis individualmente, ele alinha as linhas flexiveis do conteiner individualmente (só funciona se o <strong>flex-wrap: ;</strong> for diferente de nowrap). É possivel usar alguns valores para configurar esse alinhamento das linhas, como:<br><br><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente, e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.<br><br><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).<br><br><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).<br><br><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).<br><br><strong>space-between</strong>, alinha os itens dentro do conteiner, com um espaço igual entre eles. O primeiro item fica alinhado no inicio do conteiner e o ultimo item fica alinhado no fim do conteiner.<br><br><strong>space-around</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. O espaço entre os itens é o dobro do espaço inicial e do espaço final.<br><br><strong>space-evenly</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. Todos os espaços entorno dos itens, tem o mesmo tamanho.</p>
     <hr>
 </body>
 </html>
