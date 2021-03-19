@@ -51,153 +51,155 @@
     </style>
 </head>
 <body>
-    <h1>align-content: ;</h1>
-    <p>Usar para modificar/definir o comportamento das linhas do <strong>Flex Conteiner</strong>, definidas pelo <strong>flex-wrap: ;</strong>. Semelhante ao <strong>align-items: ;</strong>, mas em vez de alinhar todos os itens flexiveis individualmente, ele alinha as linhas flexiveis do conteiner individualmente (só funciona se o <strong>flex-wrap: ;</strong> for diferente de nowrap).</p>
-    <h2>stretch (Padrão)</h2>
-    <p><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente, e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.</p>
-    <article class="conteiner stretch">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner stretch column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>flex-start</h2>
-    <p><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner flex-start">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner flex-start column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>flex-end</h2>
-    <p><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner flex-end">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner flex-end column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>center</h2>
-    <p><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner center">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner center column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>space-between</h2>
-    <p><strong>space-between</strong>, alinha os itens dentro do conteiner, com um espaço igual entre eles. O primeiro item fica alinhado no inicio do conteiner e o ultimo item fica alinhado no fim do conteiner.</p>
-    <article class="conteiner space-between">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner space-between column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>space-around</h2>
-    <p><strong>space-around</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. O espaço entre os itens é o dobro do espaço inicial e do espaço final.</p>
-    <article class="conteiner space-around">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner space-around column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <hr>
-    <h2>space-evenly</h2>
-    <p><strong>space-evenly</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. Todos os espaços entorno dos itens, tem o mesmo tamanho.</p>
-    <article class="conteiner space-evenly">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
-    <article class="conteiner space-evenly column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-        <div class="item">Tamanho alternativo para o número seis</div>
-        <div class="item">7</div>
-    </article>
+    <main>
+        <h1>align-content: ;</h1>
+        <p>Usar para modificar/definir o comportamento das linhas do <strong>Flex Conteiner</strong>, definidas pelo <strong>flex-wrap: ;</strong>. Semelhante ao <strong>align-items: ;</strong>, mas em vez de alinhar todos os itens flexiveis individualmente, ele alinha as linhas flexiveis do conteiner individualmente (só funciona se o <strong>flex-wrap: ;</strong> for diferente de nowrap).</p>
+        <h2>stretch (Padrão)</h2>
+        <p><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente, e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.</p>
+        <article class="conteiner stretch">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner stretch column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>flex-start</h2>
+        <p><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner flex-start">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner flex-start column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>flex-end</h2>
+        <p><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner flex-end">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner flex-end column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>center</h2>
+        <p><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner center">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner center column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>space-between</h2>
+        <p><strong>space-between</strong>, alinha os itens dentro do conteiner, com um espaço igual entre eles. O primeiro item fica alinhado no inicio do conteiner e o ultimo item fica alinhado no fim do conteiner.</p>
+        <article class="conteiner space-between">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner space-between column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>space-around</h2>
+        <p><strong>space-around</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. O espaço entre os itens é o dobro do espaço inicial e do espaço final.</p>
+        <article class="conteiner space-around">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner space-around column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <hr>
+        <h2>space-evenly</h2>
+        <p><strong>space-evenly</strong>, alinha os itens dentro do conteiner, com um espaço entorno deles. Todos os espaços entorno dos itens, tem o mesmo tamanho.</p>
+        <article class="conteiner space-evenly">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+        <article class="conteiner space-evenly column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+            <div class="item">Tamanho alternativo para o número seis</div>
+            <div class="item">7</div>
+        </article>
+    </main>
 </body>
 </html>

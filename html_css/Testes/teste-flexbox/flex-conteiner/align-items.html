@@ -48,101 +48,103 @@
     </style>
 </head>
 <body>
-    <h1>align-items: ;</h1>
-    <p>Usar para alinhar os <strong>Flex Itens</strong> dentro do <strong>Flex Conteiner</strong>(funciona com qualquer <strong>flex-direction: ;</strong>)(de forma grosseira, alinha o <strong>flex-direction: row;</strong> verticalmente e o <strong>flex-direction: column;</strong> horizontalmente).</p>
-    <h2>stretch (Padrão)</h2>
-    <p><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente, e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.</p>
-    <article class="conteiner stretch">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <article class="conteiner stretch column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <hr>
-    <h2>flex-start</h2>
-    <p><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner flex-start">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <article class="conteiner flex-start column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <hr>
-    <h2>flex-end</h2>
-    <p><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner flex-end">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <article class="conteiner flex-end column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <hr>
-    <h2>center</h2>
-    <p><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner center">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <article class="conteiner center column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <hr>
-    <h2>baseline</h2>
-    <p><strong>baseline</strong>, alinha os itens no conteiner, de acordo com a baseline da fonte das letras (verticalmente para <strong>flex-direction: row;</strong> e horizontalmente para o <strong>flex-direction: column;</strong>).</p>
-    <article class="conteiner baseline">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <article class="conteiner baseline column">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
-    <hr>
-    <h2>Alinhamento central</h2>
-    <p>Usando os valores <strong>justify-content: center;</strong> e <strong>align-items: center;</strong> em conjuto no mesmo <strong>Flex Item</strong>, é possivel realizar um alinhamento central completo (tanto horizontalmente quanto verticalmente).</p>
-    <article class="conteiner center-center">
-        <div class="item">1</div>
-        <div class="item">Tamanho alternativo 2</div>
-        <div class="item">3</div>
-        <div class="item">Tamanho alternativo número quatro</div>
-        <div class="item">5</div>
-    </article>
+    <main>
+        <h1>align-items: ;</h1>
+        <p>Usar para alinhar os <strong>Flex Itens</strong> dentro do <strong>Flex Conteiner</strong>(funciona com qualquer <strong>flex-direction: ;</strong>)(de forma grosseira, alinha o <strong>flex-direction: row;</strong> verticalmente e o <strong>flex-direction: column;</strong> horizontalmente).</p>
+        <h2>stretch (Padrão)</h2>
+        <p><strong>stretch</strong> (Padrão), estica os <strong>Flex Itens</strong> igualmente, e faz com que o <strong>flex-direction: row;</strong> preencha o conteiner verticalmente e o <strong>flex-direction: column;</strong> preencha o conteiner horizontalmente.</p>
+        <article class="conteiner stretch">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner stretch column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>flex-start</h2>
+        <p><strong>flex-start</strong>, alinha os itens no começo do conteiner (em cima para o <strong>flex-direction: row;</strong> e a esquerda para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner flex-start">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner flex-start column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>flex-end</h2>
+        <p><strong>flex-end</strong>, alinha os itens no fim do conteiner (em baixo para o <strong>flex-direction: row;</strong> e a direita para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner flex-end">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner flex-end column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>center</h2>
+        <p><strong>center</strong>, como o proprio nome já diz, alinha os itens ao centro do conteiner (no centro vertical para <strong>flex-direction: row;</strong> e no centro horizontal para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner center">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner center column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>baseline</h2>
+        <p><strong>baseline</strong>, alinha os itens no conteiner, de acordo com a baseline da fonte das letras (verticalmente para <strong>flex-direction: row;</strong> e horizontalmente para o <strong>flex-direction: column;</strong>).</p>
+        <article class="conteiner baseline">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner baseline column">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>Alinhamento central</h2>
+        <p>Usando os valores <strong>justify-content: center;</strong> e <strong>align-items: center;</strong> em conjuto no mesmo <strong>Flex Item</strong>, é possivel realizar um alinhamento central completo (tanto horizontalmente quanto verticalmente).</p>
+        <article class="conteiner center-center">
+            <div class="item">1</div>
+            <div class="item">Tamanho alternativo 2</div>
+            <div class="item">3</div>
+            <div class="item">Tamanho alternativo número quatro</div>
+            <div class="item">5</div>
+        </article>
+    </main>
 </body>
 </html>
