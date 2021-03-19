@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink</title>
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /**/
+        .conteiner{
+            width: 40%;
+        }
+        .item{
+            flex-basis: 75px;
+        }
+        /**/
+        .wrap{
+            flex-wrap: wrap;
+        }
+        /**/
+        .shrink-1{
+            flex-shrink: 1;
+        }
+        /**/
+        .shrink-0{  
+            flex-shrink: 0;
+        }
+        /**/
+        .shrink-2{
+            flex-shrink: 2;
+        }
+        /**/
+        .shrink-3{
+            flex-shrink: 3;
+        }
+        /**/
+        .column{
+            flex-direction: column;
+            height: 370px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>flex-shrink: ;</h1>
+        <p>Usar para definir a proporção em que cada <strong>Flex Item</strong>, irá diminuir se não houver mais espaço. Os valores são definidos com números (É basicamente, o contrario do <strong>flex-grow: ;</strong>).  Na maioria das vezes é usado em conjunto com outras propriedades do <strong>Flex Item</strong>.</p>
+        <h2>flex-shrink: 1; (Padrão)</h2>
+        <p><strong>flex-shrink: 1;</strong> (padrão), indica que todos os <strong>Flex Itens</strong> irão diminuir na mesma proporção. E que os itens, com tamanho definido, poderão diminuir para caber em um <strong>Flex conteiner</strong>.</p>
+        <article class="conteiner">
+            <div class="item shrink-1">1</div>
+            <div class="item shrink-1">Numero 2</div>
+            <div class="item shrink-1">3</div>
+            <div class="item shrink-1">Numero 4</div>
+            <div class="item shrink-1">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item shrink-1">1</div>
+            <div class="item shrink-1">Numero 2</div>
+            <div class="item shrink-1">3</div>
+            <div class="item shrink-1">Numero 4</div>
+            <div class="item shrink-1">5</div>
+        </article>
+        <hr>
+        <h2>flex-shrink: 0;</h2>
+        <p><strong>flex-shrink: 0;</strong>, não permite que os <strong>Flex Itens</strong>, com tamanho definido, diminuam para caber no <strong>Flex Conteiner</strong>.</p>
+        <article class="conteiner">
+            <div class="item shrink-0">1</div>
+            <div class="item shrink-0">Numero 2</div>
+            <div class="item shrink-0">3</div>
+            <div class="item shrink-0">Numero 4</div>
+            <div class="item shrink-0">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item shrink-0">1</div>
+            <div class="item shrink-0">Numero 2</div>
+            <div class="item shrink-0">3</div>
+            <div class="item shrink-0">Numero 4</div>
+            <div class="item shrink-0">5</div>
+        </article>
+        <h2>flex-shrink: ; com valores variado</h2>
+        <p>Se os <strong>Flex Itens</strong> não caberem no <strong>Flex Conteiner</strong> eles serão diminuidos na proporção indicadas pelo valor.</p><br>
+        <p><strong>(Não da muito efeito por que o flex-wrap: wrap; foi adicionado)</strong></p>
+        <article class="conteiner wrap">
+            <div class="item shrink-0">1</div>
+            <div class="item shrink-2">Numero 2</div>
+            <div class="item shrink-0">3</div>
+            <div class="item shrink-3">Numero 4</div>
+            <div class="item shrink-2">5</div>
+            <div class="item shrink-0">Numero 6</div>
+            <div class="item shrink-2">7</div>
+            <div class="item shrink-0">Numero 8</div>
+        </article>
+        <article class="conteiner column wrap">
+            <div class="item shrink-1">1</div>
+            <div class="item shrink-3">Numero 2</div>
+            <div class="item shrink-0">3</div>
+            <div class="item shrink-2">Numero 4</div>
+            <div class="item shrink-3">5</div>
+            <div class="item shrink-0">Numero 6</div>
+            <div class="item shrink-1">7</div>
+            <div class="item shrink-3">Numero 8</div>
+        </article>
+    </main>
+</body>
+</html>
