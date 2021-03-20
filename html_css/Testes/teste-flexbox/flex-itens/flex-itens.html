@@ -11,12 +11,14 @@
         /*Teste de menu*/
         /*Configurando o flex conteiner, e ajustuando o alinhamento dos Flex Itens*/
         .menu-back{
-            display:flex;
-            justify-content: space-between;
+            display: flex;
+        }
+        .menu{
         }
         .link{
-            display:flex;
             width: 35px;
+            align-self:flex-start;
+            flex: 0 1 auto;
         }
         /*Configurando o estilo do link*/
         .link-retorno{
@@ -36,10 +38,9 @@
             <selection class="link">
                 <p><a href="../base-flexbox.html" class="link-retorno">&lt--</a></p>
             </selection>
-            <selection class=menu>
+            <selection class="menu">
               <h1>Flex Itens.</h1>
             </selection>
-            <selection></selection>
         </div>
         <p><strong>Flex Itens</strong> são os filhos dos <strong>Flex Conteiners</strong>. Os <strong>Flex Itens</strong> também podem ser conteiners, bastas adicionar uma propriedade <strong>display: flex;</strong> a ele (Suas tags filhas irão se tornar <strong>Flex Itens</strong> também).</p>
         <hr>
@@ -51,6 +52,9 @@
         <hr>
         <h2><a href="flex-shrink.html">flex-shrink: ;</a></h2>
         <p>Usar para definir a proporção em que cada <strong>Flex Item</strong>, irá diminuir se não houver mais espaço. Os valores são definidos com números (É basicamente, o contrario do <strong>flex-grow: ;</strong>).  Na maioria das vezes é usado em conjunto com outras propriedades do <strong>Flex Item</strong>. <br><br><strong>flex-shrink: 1;</strong> (padrão), indica que todos os <strong>Flex Itens</strong> irão diminuir na mesma proporção. E que os itens, com tamanho definido, poderão diminuir para caber em um <strong>Flex conteiner</strong>.<br><br><strong>flex-shrink: 0;</strong>, não permite que os <strong>Flex Itens</strong>, com tamanho definido, diminuam para caber no <strong>Flex Conteiner</strong>.<br><br>Se os <strong>Flex Itens</strong> não caberem no <strong>Flex Conteiner</strong> eles serão diminuidos na proporção indicadas pelo valor.</</p>
+        <hr>
+        <h2><a href="flex.html">flex: ;</a></h2>
+        <p><strong>flex: ;</strong> é uma propriedade que une as propriedades <strong>flex-grow: ;</strong>, <strong>flex-shrink</strong> e <strong>flex-basis</strong> (nessa ordem), em uma só (um atalho). Ela permite todas as combinações de valores das 3 propriedades. Por quesito de compatibilidade nos navegadores, é recomendado que use esse atalho em vez das 3 propriedades sozinhas. Algumas dessa combinações possiveis são:<br><br><strong>flex: 0 1 auto;</strong> (Padrão), se a propriedade <strong>flex</strong> for adicionada com esse valor ou não , nada irá mudar.</p>
         <hr>
     </main>
 </body>

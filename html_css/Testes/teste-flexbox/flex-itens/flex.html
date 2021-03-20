@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /**/
+        .flex{
+            flex: 0 1 auto;
+        }
+        /**/
+        .flex1{
+            flex: 1;
+        }
+        /**/
+        .flex75{
+            flex: 1 0 75px
+        }
+        .flex010{
+            flex: 0 1 0;
+        }
+        .flex100{
+            flex: 0 0 100px;
+        }
+        /**/
+        .column{
+            flex-direction:column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>flex: ;</h1>
+        <p><strong>flex: ;</strong> é uma propriedade que une as propriedades <strong>flex-grow: ;</strong>, <strong>flex-shrink</strong> e <strong>flex-basis</strong> (nessa ordem), em uma só (um atalho). Ela permite todas as combinações de valores das 3 propriedades. Por quesito de compatibilidade nos navegadores, é recomendado que use esse atalho em vez das 3 propriedades sozinhas. Algumas dessa combinações possiveis são:</p>
+        <h2><strong>flex: 0 1 auto;</strong> (Padrão)</h2>
+        <p>Se a propriedade <strong>flex</strong> for adicionada com esse valor ou não , nada irá mudar.</p>
+        <article class="conteiner">
+            <div class="item flex">1</div>
+            <div class="item flex">2</div>
+            <div class="item flex">3</div>
+            <div class="item flex">4</div>
+            <div class="item flex">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item flex">1</div>
+            <div class="item flex">2</div>
+            <div class="item flex">3</div>
+            <div class="item flex">4</div>
+            <div class="item flex">5</div>
+        </article>
+        <hr>
+        <h2>Alguns exemplos de uso:</h2>
+        <p><strong>flex: 1;</strong> (flex-grow: 1;, flex-shrink: 0; e flex-basis: 0;)</p>
+        <article class="conteiner">
+            <div class="item flex1">1</div>
+            <div class="item flex1">2</div>
+            <div class="item flex1">3</div>
+            <div class="item flex1">4</div>
+            <div class="item flex1">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item flex1">1</div>
+            <div class="item flex1">2</div>
+            <div class="item flex1">3</div>
+            <div class="item flex1">4</div>
+            <div class="item flex1">5</div>
+        </article>
+        <br>
+        <article class="conteiner">
+            <div class="item flex75">1</div>
+            <div class="item flex101">2</div>
+            <div class="item flex100">3</div>
+            <div class="item flex75">4</div>
+            <div class="item flex1">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item flex75">1</div>
+            <div class="item flex75">2</div>
+            <div class="item flex75">3</div>
+            <div class="item flex75">4</div>
+            <div class="item flex75">5</div>
+        </article>
+        <br>
+        <article class="conteiner">
+            <div class="item flex100">1</div>
+            <div class="item flex">2</div>
+            <div class="item flex1">3</div>
+            <div class="item flex101">4</div>
+            <div class="item flex75">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item flex">1</div>
+            <div class="item flex1">2</div>
+            <div class="item flex">3</div>
+            <div class="item flex75">4</div>
+            <div class="item flex101">5</div>
+        </article>
+        <br>
+    </main>
+</body>
+</html>
