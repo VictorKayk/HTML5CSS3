@@ -79,6 +79,7 @@ p, p a, p a:link, p a:visited, p a:active, p a:hover{
     text-align:center;
     margin-bottom: 50px;
     margin-top:10px;
+    margin: 0 auto;
     color:var(--cor-texto);
     font-size: 125%;
     font-weight:500;
@@ -119,4 +120,32 @@ hr{
     background-color: var(--cor-item);
     margin: 5px;
     color:var(--bege);
+}
+
+/*Menu*/
+/*Configurando o flex conteiner, e ajustuando o alinhamento dos Flex Itens*/
+.menu-back{
+    display: flex; 
+}
+.menu{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    margin-right: 43px;
+}
+.link{
+    width: 35px;
+    align-self: flex-start;
+    flex: 0 1 auto;
+    margin-left: 10px;
+}
+/*Configurando o estilo do link*/
+.link-retorno{
+    text-align:center;
+    margin: 0px;
+    color:#01172F;
+    font-size: 125%;
+    font-weight:500;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
 }
