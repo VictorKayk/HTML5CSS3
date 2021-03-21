@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="shortcut icon" href="../icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /**/
+        .ordem-1{
+            order: -1;
+        }
+        /**/
+        .ordem{
+            order:0;
+        }
+        /**/
+        .ordem1{
+            order: 1;
+        }
+        /**/
+        .ordem2{
+            order:2;
+        }
+        /**/
+        .ordem3{
+            order:3;
+        }
+        /**/
+        .ordem4{
+            order:4;
+        }
+        /**/
+        .ordem5{
+            order:5;
+        }
+        /**/
+        .column{
+            flex-direction:column;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="menu-back">
+            <selection class="link">
+                <p><a href="../flex-itens/flex-itens.html" class="link-retorno">&lt--</a></p>
+            </selection>
+            <selection class=menu>
+               <h1>order: ;</h1>
+            </selection>
+        </div>
+        <p>Usar para definir a ordem de um <strong>Flex Item</strong> em relação aos outros <strong>Flex Itens</strong> do mesmo conteiner. A ordem é definida de maneira crescente (do menor para o maior), podendo se utilizar números negativos.</p><hr>
+        <h2>order: 0; (Padrão)</h2>
+        <p>O valor padrão é 0, ou seja a ordem definida pelo HTML será seguida.</p>
+        <article class="conteiner">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </article>
+        <hr>
+        <h2>Exemplo de order: ;</h2>
+        <p>Mudando a ordem dos <strong>Flex Itens</strong> com a propriedade <strong>order: ;</strong>.</p>
+        <article class="conteiner">
+            <div class="item ordem3">1</div>
+            <div class="item ordem1">2</div>
+            <div class="item ordem-1">3</div>
+            <div class="item ordem5">4</div>
+            <div class="item ordem4">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item ordem5">1</div>
+            <div class="item ordem2">2</div>
+            <div class="item ordem4">3</div>
+            <div class="item ordem-1">4</div>
+            <div class="item ordem1">5</div>
+        </article>
+        <hr>
+        <h2>Mudando apenas a ordem de 1 elemento.</h2>
+        <p>Para mudar a ordem de apenas 1 <strong>Flex Item</strong> e manter o fluxo normal dos outros, é recomendado usar um número negativo como -1.</p>
+        <article class="conteiner">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item ordem-1">5</div>
+        </article>
+        <article class="conteiner column">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item ordem-1">4</div>
+            <div class="item">5</div>
+        </article>
+    </main>
+</body>
+</html>

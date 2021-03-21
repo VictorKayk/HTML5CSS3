@@ -110,16 +110,18 @@ hr{
     padding: 3px;
     border: solid 2px var(--cor-titulo1);
     background-color:var(--azul-claro);
+    border-radius: 5px;
 }
 /*Configuração dos itens*/
 .item{
     flex:1; /*Para fazer o flex-item ocupar todo o conteiner*/
     text-align:center;
-    padding: 20px;
+    padding: 10px;
     border: solid 2px var(--cor-titulo1);
     background-color: var(--cor-item);
     margin: 5px;
     color:var(--bege);
+    border-radius:7px;
 }
 
 /*Menu*/
