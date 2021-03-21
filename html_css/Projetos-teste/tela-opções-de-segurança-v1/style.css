@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*Configurações globais*/
+*{
+    box-sizing:border-box;
+    
+    overflow:hidden;
+}
+
+/*Configurando a cor de fundo*/
+body{
+    background-color: hsl(210, 70%, 41%);
+
+}
+/*Configurando o estilo padrão dos textos*/
+p{
+    color: white;
+    
+    font-family:'Noto Sans JP', sans-serif;
+    font-size:14px;
+}
+
+
+/*Configurações do conteiner menu*/
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:160px;
+    margin: auto;
+    margin-top: 9%;
+}
+/*Definindo uma margem para os itens do menu*/
+.menu-itens{
+    margin-bottom: 10px;
+}
+/*Definindo uma cor de fundo para quando o usuario passar o mouse por cima dos itens do menu*/
+.menu-itens:hover{
+    color:#75ace4;
+}
+/*Configurações do conteiner do botão de cancelar*/
+.cancelar{
+    display:flex;
+
+    background-color: #4d92d8;
+
+    width:119px;
+    height:51px;
+    
+    margin-top:34px;
+
+    border-radius:2px;
+
+}
+/*Definindo uma cor de fundo para quando o usario passar o mouse por cima do botão de cancelar*/
+.cancelar:hover{
+    border:3px solid #89bff5;
+}
+/*Centralizando o texto do botão de cancelar*/
+.cancelar-item{ 
+    align-self: center;
+    margin: 0 auto;
+}
+
+
+/*Configurando o conteiner dos botões/imagens na lateral esquerda*/
+.link-img{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content: flex-end;
+    align-items:center;
+
+    margin-top:13.1%;
+    width: 100%;
+}
+/*Cofigurando o conteiner da lista de botões/imagens*/
+.list{
+    display:flex;
+
+    list-style: none;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 24px;
+}
+/*Configurando os conteiners individuais para os botões/imagens, e centralizando eles dentro do conteiner*/
+.item-conteiner{
+    display: flex;
+
+    align-items:center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius:2px;
+}
+/*Definindo uma cor de fundo para quando o usuario passar o mouse por cima dos botões/imagens*/
+.item-conteiner:hover{
+    background-color:#417bb4;
+}
+/*Configurando o afastamento dos botões/imagens entre eles*/
+li{
+    padding-right:7.5px;
+    padding-left: 7.5px;
+    
+}
+/*Definindo o tamanho e a cor das imagens*/
+img{
+    width:33px;
+    height:33px;
+
+    filter: invert(100%);
+}
+/*Configurações para o texto nos botões/imagens*/
+.list-text{
+    width: 35px;
+    padding-right:40px;
+
+    color:white;
+
+    font-family:'Noto Sans JP', sans-serif;
+    font-size:14px;
+
+}
