@@ -1,0 +1,10 @@
+Cores :
+	Fundo: #2c2b28
+	Sombra Fundo: #1e1d1c
+
+	Laranja1: #f3950e
+	Laranja2: #e3720e
+	Laranja3: #bc5e0b
+
+Fonte :
+	Aaux promedium Sc
