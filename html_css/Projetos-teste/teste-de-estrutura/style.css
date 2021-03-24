@@ -2,6 +2,7 @@
 *{
     box-sizing: border-box;
     margin:0;
+
 }
 /**/
 body{
@@ -165,9 +166,12 @@ p{
     .nav-list{
         margin:0px;
         padding:0px;
+
     }
     .nav-list-item{
         padding:15px;
+        
+        font-size:20px;
     }
     main{
         width: 100%;
@@ -178,5 +182,8 @@ p{
     }
     .info{
         width:100%;
+    }
+    article{
+        margin:5px;
     }
 }
