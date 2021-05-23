@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <style>
+        main{
+            margin: auto;
+            padding: 50px;
+            width: 500px;
+            background-color: slategrey;
+        }
+        form{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <main>
+        <h1>Formulario 02</h1>
+        <form action="" class="mx-auto">
+            <fieldset>
+                <div class=" mb-3">
+                    <label for="primeiro_nome" class="form-label">Primeiro nome: </label>
+                    <input type="text" name="Primeiro nome" id="primeiro_nome" placeholder="Insira o seu primeiro nome..." class="" required>
+                </div>
+                <div>
+                    <label for="sobre_nome" class="form-label">Sobrenome: </label>
+                    <input type="text" name="Sobrenome" id="sobre_nome" placeholder="Insira seu Sobrenome...">
+                </div>
+                <br>
+                <div>
+                    <label for="campo_email"  class="form-label">Email: </label>
+                    <input type="email" name="Email" id="campo_email" placeholder="Insira seu Email..." required>
+                </div>
+                <br>
+                <div>
+                    <label for="campo_telefone"  class="form-label">Telefone: </label>
+                    <input type="tel" name="Telefone" id="campo_telefone" placeholder="Insira seu telefone...">
+                </div>
+                <div>
+                    <label for="campo_sexo"  class="form-label">Sexo: </label><br>
+                    <input type="radio" name="sexo" id="Masculino" valor="Masculino"><label for="Masculino"  class="form-label">Masculino</label>
+                    <input type="radio" name="sexo" id="Feminino" valor="Feminino"><label for="Feminino"  class="form-label">Feminino</label>
+                </div>
+                <div>
+                    <label for="campo_curso"  class="form-label">Curso</label>
+                    <select name="Curso" id="campo_curso" required>
+                        <option value="Escolha seu curso" class="form-control" selected disabled>Escolha seu curso...</option>
+                        <option value="Informatica" >Informática</option>
+                        <option value="Informatica">Edificações</option>
+                    </select>
+                </div>
+                <div>
+                    <label for=""  class="form-label">Materias: </label><br>
+                    <input type="checkbox" name="Portugues" id="Portugues"><label for="Portugues"  class="form-label">Português</label><br>
+                    <input type="checkbox" name="Matematica" id="Matematica"><label for="Matematica"  class="form-label">Matematica</label><br>
+                    <input type="checkbox" name="Química" id="Química"><label for="Química"  class="form-label">Química</label><br>
+                    <input type="checkbox" name="Física" id="Física"><label for="Física"  class="form-label">Física</label><br>
+                    <input type="checkbox" name="Algoritimo" id="Algoritimo"><label for="Algoritimo"  class="form-label">Algoritimo</label><br>
+                    <input type="checkbox" name="Web" id="Web"><label for="Web"  class="form-label">Web</label>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
